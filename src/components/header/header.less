@@ -1,0 +1,98 @@
+.header {
+    width: 100%;
+
+    .header-block{
+        padding: 27px 135px;
+        @media only screen and (max-width: 768px) {
+            padding: 27px 14px 27px 14px;
+        }
+        @media only screen and (max-width: 376px) {
+            padding: 27px 15px 27px 15px;
+        }
+    }
+
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .sub-menu {
+        display: flex;
+        align-items: center;
+        
+
+        .pipe{
+            margin-left: 50px;
+            border-left: 1px solid #A9C5E0;
+            background: #A9C5E0;
+            height: 14px;
+            width: 0;
+            @media only screen and (max-width: 376px) {
+                display: none;
+            }
+        }
+
+        .courier-service{
+            margin-left: 30px;
+            font-family: 'Proxima Nova';
+            font-size: 13px;
+            line-height: 21px;
+            color: #A9C5E0;
+            @media only screen and (max-width: 376px) {
+                display: none;
+            }
+        }
+
+        .log-in-btn{
+            cursor: pointer;
+            background: transparent;
+            color: #E5E31F;
+            border: 1px solid #E5E31F;
+            border-radius: 10px;
+            width: 170px;
+            height: 52px;
+            font-size: 18px;
+        }
+
+        .phone-link{
+            display: flex;
+            align-items: center;
+            font-family: 'Proxima Nova';
+            font-size: 13px;
+            line-height: 24px;
+            margin-right: 28px;
+            color: #A9C5E0;
+            @media only screen and (max-width: 376px) {
+                display: none;
+            }
+            @media only screen and (max-width: 768px) {
+                margin-right: 0px;
+                margin-top: 32px;
+            }
+            .phone-text{
+                margin-left: 12px;
+            }
+        }
+
+    }
+    @media only screen and (max-width: 768px) {
+        align-items: start;
+    }
+
+
+    .left-menu{
+        @media only screen and (max-width: 768px) {
+            margin-top: 16px;
+        }
+    }
+
+    .right-menu{
+        @media only screen and (max-width: 768px) {
+            flex-direction: column-reverse;
+            align-items: end;
+        }
+    }
+
+}
